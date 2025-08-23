@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/background-pattern-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(275, 100%, 97%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion {
+        margin-top: 15%;
+        padding: 40px;
+        width: 600px;
+        border-radius: 20px;
+        background-color: hsl(0, 100%, 100%);
+    }
+
+    .accordion__title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .accordion__body__item:not(:last-child) {
+        border-bottom: 1px solid hsl(275, 100%, 97%);
+    }
+
+    .accordion__body__item {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .accordion__body__item div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accordion__body__item h1 {
+        cursor: pointer;
+        font-size: 18px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .accordion__body__item h1:hover {
+        color: #AD28EB;
+    }
+
+    .accordion__body__item__text {
+        display: none;
+        margin-top: 20px;
+        font-size: 16px;
+        color: hsl(292, 16%, 49%);
+    }
+
+    .plus {
+        cursor: pointer;
+    }
+
+    .minus {
+        display: none;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/background-pattern-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(275, 100%, 97%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion {
+        margin-top: 40%;
+        padding: 20px;
+        width: 300px;
+        border-radius: 20px;
+        background-color: hsl(0, 100%, 100%);
+    }
+
+    .accordion__title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .accordion__body__item:not(:last-child) {
+        border-bottom: 1px solid hsl(275, 100%, 97%);
+    }
+
+    .accordion__body__item {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .accordion__body__item div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accordion__body__item h1 {
+        cursor: pointer;
+        font-size: 16px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .accordion__body__item h1:hover {
+        color: #AD28EB;
+    }
+
+    .accordion__body__item__text {
+        display: none;
+        margin-top: 20px;
+        font-size: 13px;
+        color: hsl(292, 16%, 49%);
+    }
+
+    .plus {
+        cursor: pointer;
+    }
+
+    .minus {
+        display: none;
+        cursor: pointer;
+    }
+}
