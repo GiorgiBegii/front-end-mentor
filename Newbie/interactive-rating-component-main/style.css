@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+  /* Layout */
+  --layout-mobile: 375px;
+  --layout-desktop: 1440px;
+
+  /* Colors */
+  --color-primary-orange-500: hsl(25, 97%, 53%);
+
+  --color-neutral-white: hsl(0, 100%, 100%);
+  --color-neutral-grey-500: hsl(217, 12%, 63%);
+  --color-neutral-grey-900: hsl(213, 19%, 18%);
+  --color-neutral-grey-950: hsl(216, 12%, 8%);
+
+  /* Typography */
+  --font-family: 'Overpass', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-body: 15px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin: 20px 0px 20px 0px; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-grey-950);
+}
+
+.firstCard {
+    padding: 20px;
+    width: 300px;
+    background: linear-gradient(to bottom, var(--color-neutral-grey-900), var(--color-neutral-grey-950));
+    border-radius: 20px;
+}
+
+.firstCard__iconBack {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-neutral-grey-900);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstCard h1 {
+    margin-top: 20px;
+    color: var(--color-neutral-white);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    font-size: 24px;
+}
+
+.firstCard p {
+    margin-top: 20px;
+    color: var(--color-neutral-grey-500);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+}
+
+.rates {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-color: var(--color-neutral-grey-900);
+    color: var(--color-neutral-grey-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate:hover {
+    background-color: var(--color-primary-orange-500);
+    color: var(--color-neutral-grey-950);
+    cursor: pointer;
+}
+
+.firstCard button {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-primary-orange-500);
+    color: var(--color-neutral-white);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.firstCard button:hover {
+    background-color: var(--color-neutral-white);
+    color: var(--color-neutral-grey-950);
+}
+
+.secondCard {
+    padding: 20px;
+    width: 300px;
+    background: linear-gradient(to bottom, var(--color-neutral-grey-900), var(--color-neutral-grey-950));
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondCard img {
+    margin-top: 40px;
+}
+
+.rated {
+    width: auto;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: var(--color-neutral-grey-900);
+    border-radius: 20px;
+    color: var(--color-primary-orange-500);
+    font-size: 16px;
+}
+
+.secondCard h1 {
+    margin-top: 20px;
+    color: var(--color-neutral-white);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+}
+
+.secondCard p {
+    margin-top: 20px;
+    color: var(--color-neutral-grey-500);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    font-size: 11px;
+}
