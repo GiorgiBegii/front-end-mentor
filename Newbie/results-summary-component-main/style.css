@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 20px 0px 20px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(221, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 600px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .card__left {
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__left h3 {
+        margin-top: 20px;
+        color: hsl(221, 100%, 96%);
+    }
+
+    .card__left__circle {
+        margin-top: 20px;
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__left__circle h1 {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card__left__circle p {
+        color: hsl(241, 100%, 89%);
+    }
+
+    .card__left h2 {
+        margin-top: 20px;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card__left_description {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 220px;
+        text-align: center;
+        color: hsl(241, 100%, 89%);
+    }
+
+    .card__right {
+        margin-left: 30px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .card__right__title {
+        margin-top: 20px;
+        font-size: 24px;
+        color: hsl(224, 30%, 27%);
+    }
+
+    .summaryItems {
+        margin-top: 20px;
+        padding: 10px;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .summaryItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .summaryItemIcon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .summaryItemCategory {
+        font-size: 16px;
+    }
+
+    .summaryItemScore {
+        font-size: 16px;
+    }
+
+    .card__right button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 250px;
+        height: 40px;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        border: none;
+        border-radius: 30px;
+    }
+
+    .card__right button:hover {
+        background-color: hsl(241, 81%, 54%);
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: hsl(221, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 400px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .card__left {
+        min-width: 300px;
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__left h3 {
+        margin-top: 20px;
+        color: hsl(221, 100%, 96%);
+    }
+
+    .card__left__circle {
+        margin-top: 20px;
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__left__circle h1 {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card__left__circle p {
+        color: hsl(241, 100%, 89%);
+    }
+
+    .card__left h2 {
+        margin-top: 20px;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card__left_description {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 220px;
+        text-align: center;
+        color: hsl(241, 100%, 89%);
+    }
+
+    .card__right {
+        padding: 25px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .card__right__title {
+        margin-top: 20px;
+        font-size: 24px;
+        color: hsl(224, 30%, 27%);
+    }
+
+    .summaryItems {
+        margin-top: 20px;
+        padding: 10px;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .summaryItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .summaryItemIcon {
+        height: 24px;
+        width: 24px;
+    }
+
+    .summaryItemCategory {
+        font-size: 16px;
+    }
+
+    .summaryItemScore {
+        font-size: 16px;
+    }
+
+    .card__right button {
+        margin-top: 20px;
+        width: 250px;
+        height: 40px;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        border: none;
+        border-radius: 30px;
+    }
+
+    .card__right button:hover {
+        background-color: hsl(241, 81%, 54%);
+        cursor: pointer;
+    }
+}
+
