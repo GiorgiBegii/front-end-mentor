@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family-base);
+}
+
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --font-family-base: 'Outfit', sans-serif;
+  --font-size-body: 15px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center;  margin: 20px 0px 20px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slate-300);
+}
+
+.card {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    color: var(--slate-500);
+}
