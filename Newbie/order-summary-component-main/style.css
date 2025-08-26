@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-family-base);
+}
+
+:root {
+  /* Primary Colors */
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+  --blue-50: hsl(225, 100%, 98%);
+  --gray-600: hsl(224, 23%, 55%);
+  --blue-950: hsl(223, 47%, 23%);
+  --white: hsl(255, 0%, 100%);
+
+  /* Typography */
+  --font-family-base: 'Red Hat Display', sans-serif;
+  --font-size-body: 16px;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Layout Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin: 20px 0px 20px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./assets/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--blue-50);
+    }
+
+    .card {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: var(--white);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .card h1 {
+        margin-top: 20px;
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    .card p {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: var(--gray-600);
+    }
+
+    .card__plan {
+        margin-top: 20px;
+        width: 340px;
+        height: 80px;
+        background-color: var(--blue-50);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .card__plan img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .card__plan h2 {
+        font-size: 18px;
+    }
+
+    .card__plan h3 {
+        font-size: 16px;
+        color: var(--gray-600);
+    }
+
+    .card__plan a {
+        color: var(--blue-700);
+    }
+
+    .card__plan a:hover {
+        text-decoration: none;
+    }
+
+    .card__procBtn {
+        margin-top: 20px;
+        width: 340px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--blue-700);
+        color: var(--white);
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+        box-shadow: 0 10px 10px hsla(245, 75%, 52%, 0.3);
+    }
+
+    .card__procBtn:hover {
+        opacity: 90%;
+    }
+
+    .card__cancelBtn {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        border: none;
+        background-color: var(--white);
+        color: var(--gray-600);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./assets/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--blue-50);
+    }
+
+    .card {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: var(--white);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .card h1 {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .card p {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+        color: var(--gray-600);
+    }
+
+    .card__plan {
+        margin-top: 20px;
+        width: 260px;
+        height: 80px;
+        background-color: var(--blue-50);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .card__plan img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .card__plan h2 {
+        font-size: 16px;
+    }
+
+    .card__plan h3 {
+        font-size: 14px;
+        color: var(--gray-600);
+    }
+
+    .card__plan a {
+        font-size: 14px;
+        color: var(--blue-700);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .card__plan a:hover {
+        text-decoration: none;
+    }
+
+    .card__procBtn {
+        margin-top: 20px;
+        width: 260px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--blue-700);
+        color: var(--white);
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+        box-shadow: 0 10px 10px hsla(245, 75%, 52%, 0.3);
+    }
+
+    .card__procBtn:hover {
+        opacity: 90%;
+    }
+
+    .card__cancelBtn {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        border: none;
+        background-color: var(--white);
+        color: var(--gray-600);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+    }
+}
