@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family-base);
+}
+
+:root {
+  /* Primary Colors */
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-hide-400: hsl(178, 100%, 50%, 0);
+  --cyan-show-400: hsl(178, 100%, 50%, 0.5);
+  --cyan-400:hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --blue-950: hsl(217, 54%, 11%);  /* Main Background */
+  --blue-900: hsl(216, 50%, 16%);  /* Card Background */
+  --blue-800: hsl(215, 32%, 27%);  /* Line */
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family-base: 'Outfit', sans-serif;
+  --font-size-body: 18px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: var(--white); margin: 20px 0px 20px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-950);
+}
+
+.card {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    background-color: var(--blue-900);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.mainImg {
+    top: 20px;
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.view {
+    position: absolute;
+    top: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: var(--cyan-hide-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.view:hover {
+    cursor: pointer;
+    background-color: var(--cyan-show-400);
+    opacity: 100%;
+}
+
+.card h1 {
+    margin-top: 20px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.card h1:hover {
+    color: var(--cyan-400);
+    cursor: pointer;
+}
+
+.card p {
+    margin-top: 20px;
+    color: var(--blue-500);
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+}
+
+.editionalInfo {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid var(--blue-800);
+}
+
+.editionalInfo__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.editionalInfo__left h2 {
+    font-size: 16px;
+    color: var(--cyan-400);
+}
+
+.editionalInfo__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.editionalInfo__right h2 {
+    font-size: 16px;
+    color: var(--blue-500);
+}
+
+.author {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.author h2 {
+    font-size: 16px;
+    color: var(--blue-500);
+}
+
+.author span {
+    color: var(--white);
+}
+
+.author span:hover {
+    cursor: pointer;
+    color: var(--cyan-400);
+}
