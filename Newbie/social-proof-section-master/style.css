@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+  /* Primary Colors */
+  --color-very-dark-magenta: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family-base: 'League Spartan', sans-serif;
+  --font-size-body: 16px;
+  --font-size-card--headline: 18px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+
+.attribution {
+    margin: 40px 0px 40px 0px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family-base);
+        background-color: var(--color-white);
+    }
+
+    .header {
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__text {
+        width: 500px;
+    }
+
+    .header__text h1 {
+        width: 400px;
+        color: var(--color-very-dark-magenta);
+        /* font-weight: var(--font-weight-bold); */
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .header__text p {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: var(--font-weight-regular);
+        color: var(--color-dark-grayish-magenta);
+    }
+
+    .header__rates__cont {
+        margin-top: 20px;
+        padding: 20px 40px 20px 40px;
+        width: 440px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--color-light-grayish-magenta);
+    }
+
+    .header__rates__cont:nth-child(2) {
+        margin-left: 40px;
+    }
+
+    .header__rates__cont:nth-child(3) {
+        margin-left: 80px;
+    }
+
+    .header__rates__stars {
+        display: flex;
+        gap: 6px;
+    }
+
+    .header__rates__cont p {
+        color: var(--color-very-dark-magenta);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .body {
+        margin-top: 40px;
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .body__card {
+        padding: 40px;
+        width: 400px;
+        background-color: var(--color-very-dark-magenta);
+        border-radius: 10px;
+    }
+
+    .body__card:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .body__card:nth-child(3) {
+        margin-top: 80px;
+    }
+
+    .body__card__title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .body__card__title img {
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        display: flex;
+
+    }
+
+    .body__card__title h1 {
+        color: var(--color-white);
+        font-size: var(--font-size-card--headline);
+    }
+
+    .body__card__title h2 {
+        color: var(--color-soft-pink);
+        font-size: var(--font-size-card--headline);
+    }
+
+    .body__card p {
+        margin-top: 20px;
+        color: var(--color-white);
+        font-size: var(--font-size-body);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family-base);
+        background-color: var(--color-white);
+    }
+
+    .header {
+        margin-top: 80px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__text {
+        text-align: center;
+    }
+
+    .header__text h1 {
+        width: 400px;
+        color: var(--color-very-dark-magenta);
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .header__text p {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: var(--font-weight-regular);
+        color: var(--color-dark-grayish-magenta);
+    }
+
+    .header__rates__cont {
+        margin-top: 20px;
+        padding: 20px 40px 20px 40px;
+        width: 440px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--color-light-grayish-magenta);
+    }
+
+    .header__rates__stars {
+        display: flex;
+        gap: 6px;
+    }
+
+    .header__rates__cont p {
+        color: var(--color-very-dark-magenta);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .body {
+        margin-top: 40px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body__card {
+        padding: 40px;
+        width: 400px;
+        background-color: var(--color-very-dark-magenta);
+        border-radius: 10px;
+    }
+
+    .body__card:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .body__card:nth-child(3) {
+        margin-top: 80px;
+    }
+
+    .body__card__title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .body__card__title img {
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        display: flex;
+
+    }
+
+    .body__card__title h1 {
+        color: var(--color-white);
+        font-size: var(--font-size-card--headline);
+    }
+
+    .body__card__title h2 {
+        color: var(--color-soft-pink);
+        font-size: var(--font-size-card--headline);
+    }
+
+    .body__card p {
+        margin-top: 20px;
+        color: var(--color-white);
+        font-size: var(--font-size-body);
+    }
+}
