@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+  /* Colors */
+  --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --color-grayish-blue: hsl(212, 23%, 69%);
+  --color-light-grayish-blue: hsl(210, 46%, 95%);
+  --color-white: hsl(255, 100%, 100%);
+
+  /* Typography */
+  --font-family-base: 'Manrope', sans-serif;
+  --font-size-body: 13px;
+
+  /* Font Weights */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin: 20px 0px 20px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-light-grayish-blue);
+        font-family: var(--font-family-base);
+    }
+
+    .card {
+        width: 1000px;
+        display: flex;
+        border-radius: 20px;
+        background-color: var(--color-white);
+    }
+
+    .card__img {
+        width: 400px;
+        background-image: url('./assets/drawers.jpg');
+        background-size: cover;
+    }
+
+    .card__text {
+        width: 500px;
+        padding: 40px;
+    }
+
+    .card__text h1 {
+        color: var(--color-very-dark-grayish-blue);
+    }
+
+    .card__text p {
+        color: var(--color-desaturated-dark-blue);
+    }
+
+    .card__text__bottom {
+        position: relative;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__text__bottom__user__img {
+        margin-right: 20px;
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+    }
+
+    .card__text__bottom__user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__text__bottom__user h2 {
+        color: var(--color-very-dark-grayish-blue);
+        font-size: 16px;
+    }
+
+    .card__text__bottom__user h3 {
+        margin-top: 4px;
+        color: var(--color-grayish-blue);
+        font-weight: var(--font-weight-medium);
+        font-size: 16px;
+    }
+
+    .card__text__bottom__user__shareImg {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .card__text__bottom__user__share {
+        padding: 20px;
+        width: 240px;
+        height: 60px;
+        position: absolute;
+        top: -80px;
+        right: -100px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-desaturated-dark-blue);
+        border-radius: 10px;
+    }
+
+    .card__text__bottom__user__share h1{
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 4px;
+        color: var(--color-grayish-blue);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-light-grayish-blue);
+        font-family: var(--font-family-base);
+    }
+    
+    .card {
+        margin-top: 80px;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: var(--color-white);
+    }
+
+    .card__img {
+        width: 100%;
+        height: 280px;
+        background-image: url('./assets/drawers.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .card__text {
+        margin-top: 20px;
+        /* width: 260px; */
+        /* padding: 40px; */
+    }
+
+    .card__text h1 {
+        /* margin-top: 20px; */
+        padding: 0px 20px 0px 20px;
+        width: 100%;
+        color: var(--color-very-dark-grayish-blue);
+        font-size: 16px;
+    }
+
+    .card__text p {
+        padding: 0px 20px 0px 20px;
+        margin-top: 10px;
+        color: var(--color-desaturated-dark-blue);
+        font-size: 14px;
+    }
+
+    .card__text__bottom {
+        position: relative;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__text__bottom__user__img {
+        margin-right: 20px;
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+    }
+
+    .card__text__bottom__user {
+        padding: 0px 20px 0px 20px;
+        margin: 10px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__text__bottom__user h2 {
+        color: var(--color-very-dark-grayish-blue);
+        font-size: 14px;
+    }
+
+    .card__text__bottom__user h3 {
+        margin-top: 4px;
+        color: var(--color-grayish-blue);
+        font-weight: var(--font-weight-medium);
+        font-size: 12px;
+    }
+
+    .card__text__bottom__user__shareImg {
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .card__text__bottom__user__share {
+        padding: 20px;
+        padding-right: 140px;
+        width: 340px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-grayish-blue);
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .card__text__bottom__user__share h1{
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 4px;
+        color: var(--color-desaturated-dark-blue);
+    }
+
+    .card__text__bottom__user__share img {
+        margin-left: 10px;
+    }
+
+}
