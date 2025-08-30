@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+  /* Primary Colors */
+  --color-red-400: hsl(0, 100%, 74%);
+  --color-green-400: hsl(154, 59%, 51%);
+
+  /* Accent Colors */
+  --color-purple-700: hsl(248, 32%, 49%);
+
+  /* Neutral Colors */
+  --color-gray-900: hsl(249, 10%, 26%);
+  --color-gray-shadow-900: hsl(249, 10%, 26%, 0.2);
+  --color-purple-350: hsl(246, 25%, 77%);
+  --color-white: hsl(255, 100%, 100%);
+
+  /* Typography Desktop*/
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-desktop-title-h1: 42px;
+  --font-size-desktop-title-p: 18px;
+  --font-size-desktop-try-h1: 18px;
+  --font-size-desktop-form-input: 18px;
+  --font-size-desktop-form-button: 18px;
+  --font-size-desktop-form-lable: 14px;
+
+    /* Typography Desktop*/
+  --font-size-mobile-title-h1: 28px;
+  --font-size-mobile-title-p: 15px;
+  --font-size-mobile-try-h1: 15px;
+  --font-size-mobile-form-input: 14px;
+  --font-size-mobile-form-button: 16px;
+  --font-size-mobile-form-lable: 12px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin: 40px 0px 40px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-image: url('./assets/bg-intro-desktop.png');
+        background-color: var(--color-red-400);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family-base);
+    }
+
+    .intro {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro__title {
+        width: 500px;
+    }
+
+    .intro__title h1{
+        font-size: var(--font-size-desktop-title-h1);
+        color: var(--color-white);
+    }
+
+    .intro__title p {
+        font-size: var(--font-size-desktop-title-p);
+        color: var(--color-gray-900);
+        font-weight: var(--font-weight-medium);
+    }
+
+    .intro__claim {
+        width: 600px;
+    }
+
+    .intro__claim__try {
+        width: 100%;
+        height: 60px;
+        background-color: var(--color-purple-700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 10px var(--color-gray-shadow-900);
+    }
+
+    .intro__claim__try span {
+        font-size: var(--font-size-desktop-try-h1);
+        color: var(--color-white);
+    }
+
+    .intro__claim__try h1 {
+        font-size: var(--font-size-desktop-try-h1);
+        color: var(--color-purple-350);
+    }
+
+    .intro__claim__form {
+        margin-top: 40px;
+        padding: 40px;
+        width: 600px;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .intro__claim__form__input {
+        padding-left: 40px;
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        border: 1.5px solid var(--color-purple-350);
+        font-size: var(--font-size-desktop-form-input);
+        font-weight: var(--font-weight-semibold);
+        outline: none;
+    }
+
+    .input-error {
+        border: 2px solid var(--color-red-400);
+        background-image: url('./assets/icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 20px;
+        color: var(--color-red-400);
+        font-weight: 600;
+        outline: none;
+    }
+
+
+    .intro__claim__form button {
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--color-green-400);
+        color: var(--color-white);
+        font-size: var(--font-size-desktop-form-button);
+        cursor: pointer;
+        box-shadow: 0px 4px var(--color-gray-shadow-900);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .intro__claim__form button:hover {
+        opacity: 0.7;
+    }
+
+    .intro__claim__form__terms {
+        font-size: var(--font-size-desktop-form-lable);
+    }
+
+    .intro__claim__form__terms span {
+        color: var(--color-red-400);
+        cursor: pointer;
+    }
+
+    .err {
+        margin-top: -10px;
+        color: var(--color-red-400);
+        font-style: italic;
+        font-size: 12px;
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+        background-image: url('./assets/bg-intro-mobile.png');
+        background-color: var(--color-red-400);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family-base);
+    }
+
+    .intro {
+        margin-top: 40px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro__title {
+        width: 300px;
+    }
+
+    .intro__title h1{
+        font-size: var(--font-size-mobile-title-h1);
+        color: var(--color-white);
+        text-align: center;
+    }
+
+    .intro__title p {
+        margin-top: 20px;
+        font-size: var(--font-size-mobile-title-p);
+        color: var(--color-white);
+        font-weight: var(--font-weight-medium);
+        text-align: center;
+    }
+
+    .intro__claim {
+        width: 300px;
+    }
+
+    .intro__claim__try {
+        margin-top: 60px;
+        width: 100%;
+        height: 80px;
+        background-color: var(--color-purple-700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 10px var(--color-gray-shadow-900);
+    }
+
+    .intro__claim__try span {
+        font-size: var(--font-size-mobile-try-h1);
+        color: var(--color-white);
+    }
+
+    .intro__claim__try h1 {
+        text-align: center;
+        font-size: var(--font-size-mobile-try-h1);
+        color: var(--color-purple-350);
+    }
+
+    .intro__claim__form {
+        margin-top: 40px;
+        padding: 20px;
+        width: 300px;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .intro__claim__form__input {
+        padding-left: 20px;
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        border: 1.5px solid var(--color-purple-350);
+        font-size: var(--font-size-mobile-form-input);
+        font-weight: var(--font-weight-semibold);
+        outline: none;
+    }
+
+    .input-error {
+        border: 2px solid var(--color-red-400);
+        background-image: url('./assets/icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 20px;
+        color: var(--color-red-400);
+        font-weight: 600;
+        outline: none;
+    }
+
+
+    .intro__claim__form button {
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--color-green-400);
+        color: var(--color-white);
+        font-size: var(--font-size-mobile-form-button);
+        cursor: pointer;
+        box-shadow: 0px 4px var(--color-gray-shadow-900);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .intro__claim__form button:hover {
+        opacity: 0.7;
+    }
+
+    .intro__claim__form__terms {
+        text-align: center;
+        font-size: var(--font-size-mobile-form-lable);
+    }
+
+    .intro__claim__form__terms span {
+        color: var(--color-red-400);
+        cursor: pointer;
+    }
+
+    .err {
+        margin-top: -10px;
+        color: var(--color-red-400);
+        font-style: italic;
+        font-size: var(--font-size-mobile-form-lable);
+        display: none;
+    }
+
+}
