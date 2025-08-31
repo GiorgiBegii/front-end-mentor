@@ -14,6 +14,8 @@ Frontend Mentor is a platform that provides a variety of front-end coding challe
 
 # Completed projects ✅
 
+## Newbie
+
 | N | Technologies Used | Required technologies | Challenge                      | Live Demo                                   | Code Repository                            | Project Page                   |
 |---|-------------------|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------|--------------------------------|
 | 1. | HTML  CSS | HTML  CSS | Recipe page | [Live](https://recipe-page-giorgibegii.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/front-end-mentor/tree/main/Newbie/recipe-page-main) | [FrontendMentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) |
