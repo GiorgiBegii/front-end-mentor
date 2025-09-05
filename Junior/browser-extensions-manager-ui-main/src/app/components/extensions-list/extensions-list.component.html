@@ -1,0 +1,30 @@
+<div class="cont">
+    <div class="extensions">
+        <div class="extensions__title">
+            <h1>Extention List</h1>
+            <ul>
+                <li (click)="filter('all')">All</li>
+                <li (click)="filter('active')">Active</li>
+                <li (click)="filter('inactive')">Inactive</li>
+            </ul>
+        </div>
+        <div class="extensions__cards">
+            <div *ngFor="let extension of extensions" class="extensions__card">
+                <div class="extensions__card__head">
+                    <img [src]="extension.logo" alt="logo">
+                    <div>
+                        <h1>{{ extension.name }}</h1>
+                        <p>{{ extension.description }}</p>
+                    </div>
+                </div>
+                <div class="extensions__card__bottom">
+                    <button>Remove</button>
+                    <label class="switch">
+                        <input type="checkbox" [(ngModel)]="extension.isActive" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
