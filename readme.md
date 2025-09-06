@@ -42,4 +42,4 @@ Frontend Mentor is a platform that provides a variety of front-end coding challe
 
 | N | Technologies Used | Required technologies | Challenge                      | Live Demo                                   | Code Repository                            | Project Page                   |
 |---|-------------------|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------|--------------------------------|
-| 1. | Angular | HTML  CSS JS | Recipe page | [Live](https://browser-extensions-manager-ui-main-phi.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/browser-extensions-manager-ui-main) | [FrontendMentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) |
+| 20. | Angular | HTML  CSS JS | Recipe page | [Live](https://browser-extensions-manager-ui-main-phi.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/browser-extensions-manager-ui-main) | [FrontendMentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) |
