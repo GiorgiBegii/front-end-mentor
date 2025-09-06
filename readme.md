@@ -38,3 +38,8 @@ Frontend Mentor is a platform that provides a variety of front-end coding challe
 | 18. | HTML  CSS | HTML  CSS | Social proof section | [Live](https://social-proof-section-master-one-tan.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/front-end-mentor/tree/main/Newbie/social-proof-section-master) | [FrontendMentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) |
 | 19. | HTML  CSS | HTML  CSS | Stats preview card component | [Live](https://stats-preview-card-component-main-xi-eight.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/front-end-mentor/tree/main/Newbie/stats-preview-card-component-main) | [FrontendMentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) |
 
+## Junior
+
+| N | Technologies Used | Required technologies | Challenge                      | Live Demo                                   | Code Repository                            | Project Page                   |
+|---|-------------------|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------|--------------------------------|
+| 1. | Angular | HTML  CSS JS | Recipe page | [Live](https://browser-extensions-manager-ui-main-phi.vercel.app/) | [GitHub](https://github.com/GiorgiBegii/browser-extensions-manager-ui-main) | [FrontendMentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) |
