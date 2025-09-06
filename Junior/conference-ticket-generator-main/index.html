@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <div class="formBg">
+    <div class="formBg__linePatterntop"></div>
+    <div class="formBg__linePatternBottom"></div>
+    <div class="formBg__circlePattern0"></div>
+    <div class="formBg__circlePattern1"></div>
+    <div class="formBg__linePattern"></div>
+    <div class="form">
+      <img src="./assets/images/logo-full.svg" alt="logo">
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <h2>Secure your spot at next year's biggest coding conference.</h2>
+      
+
+      <h3>Upload Avatar</h3>
+      <label for="file-upload" id="isi" class="form__upload__container">
+        <div class="form__upload__container__imgBg">
+          <img class="form__upload__container__img" src="./assets/images/icon-upload.svg" alt="Upload Icon"/>
+        </div>
+        <div class="form__upload__container__text">Drag and drop or click to upload</div>
+        <div class="form__upload__container__buttons">
+          <button class="form__upload__container__buttons__remove">Remove image</button>
+          <button class="form__upload__container__buttons__change">Change image</button>
+        </div>
+        <input type="file" id="file-upload" accept="image/png, image/jpeg" hidden/>
+      </label>
+
+
+      <div class="form__info">
+        <img class="form__info__img" src="./assets/images/icon-info.svg" alt="">
+        <p class="form__info__alert">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+
+      <div class="form__inputs">
+        <h3>Full Name</h3>
+        <input class="input-fullname" type="text" placeholder="Your full name">
+        <p class="error-msg fullname-error" style="color: red; display:none;"></p>
+
+        <h3>Email Address</h3>
+        <input class="input-email" type="email" placeholder="example@email.com">
+        <p class="error-msg email-error" style="color: red; display:none;"></p>
+
+        <h3>GitHub Username</h3>
+        <input class="input-github" type="text" placeholder="@yourusername">
+        <p class="error-msg github-error" style="color: red; display:none;"></p>
+
+        <button class="form__inputs__generate">Generate My Ticket</button>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <img src="./assets/images/logo-full.svg" alt="logo">
+      <h1 class="congrats__name"></h1>
+      <h2 class="congrats__email"></h2>
+      <div class="ticket__bg">
+        <div>
+          <img src="./assets/images/logo-full.svg" alt="logo">
+          <h3>Jan 31, 2025 / Austin, TX</h3>
+        </div>
+        <div class="ticket__bg__profile">
+          <img class="ticket__img" src="" alt="">
+          <div>
+            <h2 class="ticket__bg__profile__name"></h2>
+            <div class="ticket__bg__profile__dflex">
+              <img src="./assets/images/icon-github.svg" alt="">
+              <h2 class="ticket__bg__profile__github"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="ticket__number">#01609</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

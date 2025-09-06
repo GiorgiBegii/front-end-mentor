@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+:root {
+    --h1-color: hsl(0, 0%, 100%);
+    --h2-color: hsl(252, 6%, 83%);
+    --upload-bg: hsl(248, 70%, 10%);
+    --input-bg: hsl(245, 19%, 35%);
+    --borders: hsl(245, 15%, 58%);
+    --p-color: hsl(245, 19%, 35%);
+    --button-bg: hsl(7, 71%, 60%);
+    --span-gradient: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 1200px) {
+
+    .formBg {
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/background-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .formBg__linePattern {
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/pattern-lines.svg');
+    }
+
+    .formBg__circlePattern0 {
+        position: absolute;
+        z-index: -1;
+        top: -120px;
+        left: 80px;
+        width: 220px;
+        height: 220px;
+        background-image: url('./assets/images/pattern-circle.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__circlePattern1 {
+        position: absolute;
+        bottom: 160px;
+        right: 320px;
+        width: 220px;
+        height: 220px;
+        background-image: url('./assets/images/pattern-circle.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__linePatternBottom {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 660px;
+        height: 320px;
+        background-image: url('./assets/images/pattern-squiggly-line-bottom-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__linePatterntop {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 600px;
+        height: 320px;
+        background-image: url('./assets/images/pattern-squiggly-line-top.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .form {
+        margin-top: 40px;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form h1 {
+        margin-top: 40px;
+        width: 800px;
+        color: var(--h1-color);
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .form h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: var(--h2-color);
+    }
+
+    .form h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 480px;
+        color: var(--h1-color);
+        text-align: start;
+    }
+
+    .form__upload__container {
+        width: 480px;
+        height: 140px;
+        background-color: var(--upload-bg);
+        border: 2px dashed var(--borders);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .form__upload__container__imgBg {
+        width: 64px;
+        height: 64px;
+        background-color: var(--input-bg);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form__upload__container__img {
+        width: 48px;
+        height: 48px;
+        border-radius: 7px;
+    }
+
+    .form__upload__container__text {
+        margin-top: 20px;
+        color: var(--h2-color);
+    }
+
+    .form__upload__container__buttons {
+        margin-top: 10px;
+        gap: 10px;
+        display: none;
+    }
+
+    .form__upload__container__buttons button{
+        padding: 6px;
+        background-color: var(--input-bg);
+        color: var(--h2-color);
+        font-size: 14px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .form__info {
+        margin-top: 20px;
+        width: 480px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .form__info img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .form__info p {
+        color: var(--p-color);
+        font-size: 14px;
+    }
+
+    .form__inputs {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__inputs input {
+        padding-left: 10px;
+        width: 100%;
+        height: 40px;
+        background-color: var(--input-bg);
+        border: 1px solid var(--borders);
+        border-radius: 4px;
+        font-size: 18px;
+        color: var(--h1-color);
+    }
+
+    .error-msg {
+        margin-top: 10px;
+        color: var(--button-bg);
+    }
+
+
+    .form__inputs button {
+        margin-top: 40px;
+        height: 40px;
+        font-size: 18px;
+        background-color: var(--button-bg);
+        border: none;
+        border-radius: 4px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .ticket {
+        margin-top: 40px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .congrats__name {
+        margin-top: 80px;
+        width: 600px;
+        text-align: center;
+        font-size: 48px;
+        color: var(--h1-color);
+    }
+
+    .congrats__email {
+        margin-top: 40px;
+        width: 360px;
+        text-align: center;
+        font-size: 18px;
+        color: var(--h2-color);
+    }
+
+    span {
+        background: var(--span-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .ticket__bg {
+        position: relative;
+        margin-top: 100px;
+        padding: 20px;
+        width: 600px;
+        height: 280px;
+        background-image: url('./assets/images/pattern-ticket.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .ticket__bg h3 {
+        margin-top: 10px;
+        margin-left: 50px;
+        color: var(--h2-color);
+    }
+
+    .ticket__bg__profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ticket__img {
+        height: 64px;
+        width: 64px;
+        border-radius: 10px;
+    }
+
+    .ticket__bg__profile__dflex {
+        display: flex;
+        gap: 8px;
+    }
+
+    .ticket__bg__profile__name {
+        margin-bottom: 10px;
+        color: var(--h1-color);
+        font-size: 24px;
+    }
+
+    .ticket__bg__profile__github {
+        color: var(--h2-color);
+        font-size: 24px;
+    }
+
+    .ticket__number {
+        position: absolute;
+        top: 120px;
+        right: 10px;
+        color: var(--h2-color);
+        font-size: 32px;
+        transform: rotate(90deg);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .formBg {
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/background-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .formBg__linePattern {
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/pattern-lines.svg');
+    }
+
+    .formBg__circlePattern0 {
+        position: absolute;
+        z-index: -1;
+        top: -120px;
+        left: 80px;
+        width: 220px;
+        height: 220px;
+        background-image: url('./assets/images/pattern-circle.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__circlePattern1 {
+        position: absolute;
+        bottom: 160px;
+        right: 320px;
+        width: 220px;
+        height: 220px;
+        background-image: url('./assets/images/pattern-circle.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__linePatternBottom {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 660px;
+        height: 320px;
+        background-image: url('./assets/images/pattern-squiggly-line-bottom-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .formBg__linePatterntop {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 600px;
+        height: 320px;
+        background-image: url('./assets/images/pattern-squiggly-line-top.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .form {
+        margin-top: 40px;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form h1 {
+        margin-top: 40px;
+        width: 800px;
+        color: var(--h1-color);
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .form h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: var(--h2-color);
+    }
+
+    .form h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 480px;
+        color: var(--h1-color);
+        text-align: start;
+    }
+
+    .form__upload__container {
+        width: 480px;
+        height: 140px;
+        background-color: var(--upload-bg);
+        border: 2px dashed var(--borders);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .form__upload__container__imgBg {
+        width: 64px;
+        height: 64px;
+        background-color: var(--input-bg);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form__upload__container__img {
+        width: 48px;
+        height: 48px;
+        border-radius: 7px;
+    }
+
+    .form__upload__container__text {
+        margin-top: 20px;
+        color: var(--h2-color);
+    }
+
+    .form__upload__container__buttons {
+        margin-top: 10px;
+        gap: 10px;
+        display: none;
+    }
+
+    .form__upload__container__buttons button{
+        padding: 6px;
+        background-color: var(--input-bg);
+        color: var(--h2-color);
+        font-size: 14px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .form__info {
+        margin-top: 20px;
+        width: 480px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .form__info img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .form__info p {
+        color: var(--p-color);
+        font-size: 14px;
+    }
+
+    .form__inputs {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__inputs input {
+        padding-left: 10px;
+        width: 100%;
+        height: 40px;
+        background-color: var(--input-bg);
+        border: 1px solid var(--borders);
+        border-radius: 4px;
+        font-size: 18px;
+        color: var(--h1-color);
+    }
+
+    .error-msg {
+        margin-top: 10px;
+        color: var(--button-bg);
+    }
+
+
+    .form__inputs button {
+        margin-top: 40px;
+        height: 40px;
+        font-size: 18px;
+        background-color: var(--button-bg);
+        border: none;
+        border-radius: 4px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .ticket {
+        margin-top: 40px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .congrats__name {
+        margin-top: 80px;
+        width: 600px;
+        text-align: center;
+        font-size: 48px;
+        color: var(--h1-color);
+    }
+
+    .congrats__email {
+        margin-top: 40px;
+        width: 360px;
+        text-align: center;
+        font-size: 18px;
+        color: var(--h2-color);
+    }
+
+    span {
+        background: var(--span-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .ticket__bg {
+        position: relative;
+        margin-top: 100px;
+        padding: 20px;
+        width: 600px;
+        height: 280px;
+        background-image: url('./assets/images/pattern-ticket.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .ticket__bg h3 {
+        margin-top: 10px;
+        margin-left: 50px;
+        color: var(--h2-color);
+    }
+
+    .ticket__bg__profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ticket__img {
+        height: 64px;
+        width: 64px;
+        border-radius: 10px;
+    }
+
+    .ticket__bg__profile__dflex {
+        display: flex;
+        gap: 8px;
+    }
+
+    .ticket__bg__profile__name {
+        margin-bottom: 10px;
+        color: var(--h1-color);
+        font-size: 24px;
+    }
+
+    .ticket__bg__profile__github {
+        color: var(--h2-color);
+        font-size: 24px;
+    }
+
+    .ticket__number {
+        position: absolute;
+        top: 120px;
+        right: 10px;
+        color: var(--h2-color);
+        font-size: 32px;
+        transform: rotate(90deg);
+    }
+
+}
