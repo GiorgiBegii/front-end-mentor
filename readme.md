@@ -10,7 +10,7 @@ Welcome to my [Frontend Mentor](https://www.frontendmentor.io/) Projects reposit
 
 > 1. Some of the projects require having pro membership to get the Figma files, hence why some of my projects are not pixel-perfect.
 > 
-> 2. Project difficulties: Newbie, Junior, Intermediate, Advanced, Guru
+> 2. Project difficulties: [Newbie](https://www.frontendmentor.io/challenges?difficulty=1&type=free%2Cfree-plus), [Junior](https://www.frontendmentor.io/challenges?difficulty=2&type=free%2Cfree-plus), [Intermediate](https://www.frontendmentor.io/challenges?difficulty=3&type=free%2Cfree-plus), [Advanced](https://www.frontendmentor.io/challenges?difficulty=4&type=free%2Cfree-plus), [Guru](https://www.frontendmentor.io/challenges?difficulty=5&type=free%2Cfree-plus)
 
 # Completed projects ✅
 
