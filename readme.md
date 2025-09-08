@@ -1,6 +1,6 @@
 # Frontend Mentor Projects
 
-Welcome to my Frontend Mentor Projects repository! Here you'll find a collection of projects I've completed from Frontend Mentor, a great platform designed to improve front-end development skills through real-world projects.
+Welcome to my [Frontend Mentor](https://www.frontendmentor.io/) Projects repository! Here you'll find a collection of projects I've completed from Frontend Mentor, a great platform designed to improve front-end development skills through real-world projects.
 
 # About Frontend Mentor 🎨
 
