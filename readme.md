@@ -4,7 +4,7 @@ Welcome to my [Frontend Mentor](https://www.frontendmentor.io/) Projects reposit
 
 # About Frontend Mentor 🎨
 
-Frontend Mentor is a platform that provides a variety of front-end coding challenges to help developers improve their skills. Each challenge includes a figma design file and screenshots to implement the design using HTML, CSS, and JavaScript ( obviously any framework usage is fine, the site doesn't restrict anything.)
+[Frontend Mentor](https://www.frontendmentor.io/) is a platform that provides a variety of front-end coding challenges to help developers improve their skills. Each challenge includes a figma design file and screenshots to implement the design using HTML, CSS, and JavaScript ( obviously any framework usage is fine, the site doesn't restrict anything.)
 
 # NOTE ❗
 
