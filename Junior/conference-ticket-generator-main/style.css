@@ -320,8 +320,8 @@
     .formBg {
         position: relative;
         z-index: 2;
-        width: 100vw;
-        height: 100vh;
+        /* width: 100vw;
+        height: 100vh; */
         background-image: url('./assets/images/background-desktop.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -342,10 +342,10 @@
     .formBg__circlePattern0 {
         position: absolute;
         z-index: -1;
-        top: -120px;
-        left: 80px;
-        width: 220px;
-        height: 220px;
+        top: -60px;
+        left: 60px;
+        width: 120px;
+        height: 120px;
         background-image: url('./assets/images/pattern-circle.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -353,10 +353,11 @@
 
     .formBg__circlePattern1 {
         position: absolute;
-        bottom: 160px;
-        right: 320px;
-        width: 220px;
-        height: 220px;
+        z-index: -1;
+        bottom: 320px;
+        right: 0px;
+        width: 120px;
+        height: 120px;
         background-image: url('./assets/images/pattern-circle.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -364,10 +365,11 @@
 
     .formBg__linePatternBottom {
         position: absolute;
+        z-index: -1;
         bottom: 0px;
         left: 0px;
-        width: 660px;
-        height: 320px;
+        width: 200px;
+        height: 100px;
         background-image: url('./assets/images/pattern-squiggly-line-bottom-desktop.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -375,9 +377,9 @@
 
     .formBg__linePatterntop {
         position: absolute;
-        top: 80px;
+        top: 40px;
         right: 0px;
-        width: 600px;
+        width: 200px;
         height: 320px;
         background-image: url('./assets/images/pattern-squiggly-line-top.svg');
         background-repeat: no-repeat;
@@ -395,28 +397,32 @@
 
     .form h1 {
         margin-top: 40px;
-        width: 800px;
+        width: 300px;
         color: var(--h1-color);
-        font-size: 48px;
+        font-size: 24px;
         text-align: center;
     }
 
     .form h2 {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 20px;
+        width: 300px;
         color: var(--h2-color);
+        font-size: 18px;
+        text-align: center;
     }
 
     .form h3 {
         margin-top: 30px;
         margin-bottom: 10px;
-        width: 480px;
+        width: 280px;
+        font-size: 16px;
         color: var(--h1-color);
         text-align: start;
     }
 
     .form__upload__container {
-        width: 480px;
+        width: 280px;
         height: 140px;
         background-color: var(--upload-bg);
         border: 2px dashed var(--borders);
@@ -468,7 +474,7 @@
 
     .form__info {
         margin-top: 20px;
-        width: 480px;
+        width: 280px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -486,7 +492,7 @@
     }
 
     .form__inputs {
-        width: 480px;
+        width: 280px;
         display: flex;
         flex-direction: column;
     }
@@ -509,6 +515,7 @@
 
 
     .form__inputs button {
+        margin-bottom: 60px;
         margin-top: 40px;
         height: 40px;
         font-size: 18px;
@@ -521,6 +528,7 @@
 
     .ticket {
         margin-top: 40px;
+        height: 100vh;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -529,17 +537,17 @@
 
     .congrats__name {
         margin-top: 80px;
-        width: 600px;
+        width: 280px;
         text-align: center;
-        font-size: 48px;
+        font-size: 32px;
         color: var(--h1-color);
     }
 
     .congrats__email {
         margin-top: 40px;
-        width: 360px;
+        width: 280px;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         color: var(--h2-color);
     }
 
@@ -551,10 +559,10 @@
 
     .ticket__bg {
         position: relative;
-        margin-top: 100px;
-        padding: 20px;
-        width: 600px;
-        height: 280px;
+        margin-top: 60px;
+        padding: 10px;
+        width: 280px;
+        height: 130px;
         background-image: url('./assets/images/pattern-ticket.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -564,10 +572,15 @@
         align-items: start;
     }
 
+    .ticket__logo {
+        width: 100px;
+    }
+
     .ticket__bg h3 {
-        margin-top: 10px;
-        margin-left: 50px;
+        margin-top: 4px;
+        margin-left: 30px;
         color: var(--h2-color);
+        font-size: 12px;
     }
 
     .ticket__bg__profile {
@@ -577,33 +590,38 @@
     }
 
     .ticket__img {
-        height: 64px;
-        width: 64px;
+        height: 32px;
+        width: 32px;
         border-radius: 10px;
     }
 
     .ticket__bg__profile__dflex {
         display: flex;
+        align-items: center;
         gap: 8px;
     }
 
+    .ticket__bg__profile__dflex img {
+        height: 18px;
+        width: 18px;
+    }
+
     .ticket__bg__profile__name {
-        margin-bottom: 10px;
         color: var(--h1-color);
-        font-size: 24px;
+        font-size: 12px;
     }
 
     .ticket__bg__profile__github {
         color: var(--h2-color);
-        font-size: 24px;
+        font-size: 12px;
     }
 
     .ticket__number {
         position: absolute;
-        top: 120px;
-        right: 10px;
+        top: 60px;
+        right: 4px;
         color: var(--h2-color);
-        font-size: 32px;
+        font-size: 18px;
         transform: rotate(90deg);
     }
 
