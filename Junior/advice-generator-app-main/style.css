@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+
+:root {
+    --body-bg: hsl(218, 23%, 16%);
+    --card-bg: hsl(217, 19%, 24%);
+    --p-color: hsl(150, 100%, 66%);
+    --h1-color: hsl(193, 38%, 86%);
+
+    --font-family: "Manrope", sans-serif;;
+}
+
+.attribution { font-size: 11px; text-align: center;  margin: 80px 0 80px 0; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 800px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--body-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        padding: 20px;
+        width: 600px;
+        height: 300px;
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-advice_number {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--p-color);
+        font-size: 14px;
+        letter-spacing: 6px;
+        font-weight: 700;
+    }
+
+    .card-advice_text {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--h1-color);
+        font-size: 24px;
+    }
+
+    .card-advice_img {
+        margin-bottom: 40px;
+        margin-top: auto;
+    }
+
+    .card-dice_bg {
+        position: absolute;
+        bottom: -32px;
+        left: 268px;
+        width: 64px;
+        height: 64px;
+        background-color: var(--p-color);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .card-dice_bg:hover {
+        box-shadow: 0 0 20px rgba(83, 255, 171, 0.8), 0 0 40px rgba(83, 255, 171, 0.6);
+        transform: scale(1.05); /* Slight grow on hover */
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--body-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        padding: 20px;
+        width: 280px;
+        height: 300px;
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-advice_number {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--p-color);
+        font-size: 12px;
+        letter-spacing: 6px;
+        font-weight: 700;
+    }
+
+    .card-advice_text {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--h1-color);
+        font-size: 18px;
+    }
+
+    .card-advice_img {
+        margin-bottom: 40px;
+        margin-top: auto;
+        width: 260px;
+    }
+
+    .card-dice_bg {
+        position: absolute;
+        bottom: -32px;
+        left: 108px;
+        width: 64px;
+        height: 64px;
+        background-color: var(--p-color);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+}
