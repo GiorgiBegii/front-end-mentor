@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+
+:root {
+    --body-bg: hsl(0, 0%, 86%);
+    --card-bg: hsl(0, 100%, 100%);
+    --blue: hsl(259, 100%, 65%);
+    --err: hsl(0, 100%, 67%);
+    --label-color: hsl(0, 1%, 44%);
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 40px 0px 40px 0px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    input {
+        margin-top: 10px;
+        padding-left: 10px;
+        display: block;
+        width: 140px;
+        height: 60px;
+        font-size: 24px;
+        border-radius: 6px;
+        border: 1px solid var(--body-bg);
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        color: var(--label-color);
+    }
+
+    .card {
+        padding: 60px;
+        width: 600px;
+        height: 640px;
+        background-color: var(--card-bg);
+        border-radius: 20px 20px 220px 20px;
+    }
+
+    .card-inputs {
+        display: flex;  
+        gap: 40px;
+    }
+
+    .err {
+        margin-top: 10px;
+        color: var(--err);
+        font-size: 12px;
+    }
+
+    .card-middle {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-middle_line {
+        width: 400px;
+        height: 1px;
+        background-color: var(--body-bg);
+    }
+
+    .card-middle_button {
+        height: 84px;
+        width: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+
+    .card-middle_button img {
+        height: 42px;
+        width: 42px;
+    }
+
+    .card-results h1 {
+        font-size: 64px;
+    }
+
+    .card-results span {
+        color: var(--blue);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    input {
+        margin-top: 10px;
+        padding-left: 10px;
+        display: block;
+        width: 74px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 1px solid var(--body-bg);
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        color: var(--label-color);
+    }
+
+    .card {
+        padding: 20px;
+        width: 300px;
+        height: 440px;
+        background-color: var(--card-bg);
+        border-radius: 20px 20px 120px 20px;
+    }
+
+    .card-inputs {
+        display: flex;  
+        gap: 20px;
+    }
+
+    .err {
+        margin-top: 8px;
+        color: var(--err);
+        font-size:10px;
+    }
+
+    .card-middle {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-middle_line {
+        width: 200px;
+        height: 1px;
+        background-color: var(--body-bg);
+    }
+
+    .card-middle_button {
+        height: 64px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: var(--blue);
+        cursor: pointer;
+    }
+
+    .card-middle_button img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .card-results h1 {
+        font-size: 32px;
+    }
+
+    .card-results span {
+        color: var(--blue);
+    }
+
+}
