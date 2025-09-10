@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+
+  <!-- 
+  
+  Please enter a valid email address
+  This field is required 
+
+  -->
+
+  <div class="card">
+    <h1>Contact Us</h1>
+
+    <div class="card-name">
+      <div>
+        <h2>First Name <span>*</span></h2>
+        <input class="firstname_input" type="text" name="" id="" required>
+        <p class="firstname_err">This field is required</p>
+      </div>
+      <div>
+        <h2>Last Name <span>*</span></h2>
+        <input class="lastname_input" type="text" name="" id="">
+        <p class="lastname_err">This field is required</p>
+      </div>
+    </div>
+
+    <div class="card-email">
+      <h2>Email Address <span>*</span></h2>
+      <input class="email_input" type="text" name="" id="">
+      <p class="email_err"></p>
+    </div>
+
+    <div class="card-query">
+      <h2>Query Type <span>*</span></h2>
+      <div class="card-query_dflex">
+        <div class="card-query_button radio0">
+          <div class="card-query_button_radio radio0Icon"></div>
+          <h3>General Enquiry</h3>
+        </div>
+        <div class="card-query_button radio1">
+          <div class="card-query_button_radio radio1Icon"></div>
+          <h3>Support Request</h3>
+        </div>
+      </div>
+      <p class="radio_err">Please select a query type</p>
+    </div>
+
+    <div class="card-message">
+      <h2>Message <span>*</span></h2>
+      <textarea class="message_input"></textarea>
+      <p class="message_err">This field is required</p>
+    </div>
+
+    <div class="card-check">
+      <div>
+        <input class="check_input" type="checkbox">
+        <label>I consent to being contacted by the team</label>
+      </div>
+      <p class="check_err">To submit this form, please consent to being contacted</p>
+    </div>
+
+    <button class="submit">Submit</button>
+  </div>
+
+  <div class="alert">
+    <div class="alert-dflex">
+      <img src="./assets/icon-success-check.svg" alt="">
+      <h2>Message Sent!</h2>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <!-- 
+  Thanks for completing the form. We'll be in touch soon! -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
